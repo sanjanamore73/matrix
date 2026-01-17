@@ -29,25 +29,29 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container" role="main">
     <h1>Sign Up</h1>
-    <form id="signup-form">
-      <label for="email">Email</label>
-      <input id="email" type="email" required />
+    <form id="signup-form" method="POST" novalidate>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" required autocomplete="email" inputmode="email" />
+      </div>
 
-      <label for="password">Password</label>
-      <input id="password" type="password" minlength="6" required />
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" minlength="6" required autocomplete="new-password" />
+      </div>
 
-      <button type="submit">Create account</button>
+      <button type="submit" aria-label="Create your account">Create account</button>
     </form>
 
     <div style="margin-top:1rem;">
-      <button id="google-signin" type="button">Sign in with Google</button>
+      <button id="google-signin" type="button" aria-label="Sign up with Google">Sign in with Google</button>
     </div>
 
-    <div id="message" aria-live="polite" style="margin-top:1rem;"></div>
+    <div id="message" aria-live="polite" aria-atomic="true" style="margin-top:1rem;"></div>
 
-    <p style="margin-top:1rem;">Already have an account? <a href="index.html">Sign in</a></p>
+    <p style="margin-top:1rem;">Already have an account? <a href="login.html" aria-label="Go to sign in page">Sign in</a></p>
   </main>
 
   <script type="module" src="js/firebase-config.js"></script>

@@ -29,10 +29,10 @@
         </nav>
     </header>
 
-  <main class="container">
+  <main class="container" id="dashboard" role="main">
     <h1>Dashboard</h1>
-    <p id="welcome">Please login to view dashboard</p>
-    <button id="signout" style="display:none;">Sign out</button>
+    <div id="welcome" role="status" aria-live="polite">Please login to view dashboard</div>
+    <button id="signout" style="display:none;" aria-label="Sign out from your account">Sign out</button>
   </main>
 
   <script type="module" src="js/firebase-config.js"></script>
