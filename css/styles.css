@@ -434,6 +434,49 @@ p {
     display: block;
 }
 
+/* Auth dropdown (Login / Username) */
+.nav-auth {
+    position: relative;
+}
+.nav-auth > a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.nav-auth > a:hover {
+    background: rgba(74,108,247,0.06);
+    color: var(--primary-color);
+}
+#nav-logout-container {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    padding: 6px 0;
+    min-width: 140px;
+    z-index: 220;
+    text-align: left;
+}
+#nav-logout-container a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+#nav-logout-container a:hover {
+    background: rgba(74,108,247,0.06);
+    color: var(--primary-color);
+    border-radius: 6px;
+}
+.nav-auth.signed-in:hover #nav-logout-container {
+    display: block;
+}
+
 /* Mobile: dropdown expands to available menu area so it's easy to tap */
 @media screen and (max-width: 768px) {
     .nav-links .dropdown .dropdown-menu {
