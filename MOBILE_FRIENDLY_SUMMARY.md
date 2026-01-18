@@ -2,7 +2,7 @@
 
 ## What You Now Have
 
-Your DevMentor website is now **fully mobile-optimized** with comprehensive responsive design support across all devices.
+Your TryMentor website is now **fully mobile-optimized** with comprehensive responsive design support across all devices.
 
 ---
 
