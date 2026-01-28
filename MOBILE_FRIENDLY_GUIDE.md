@@ -2,7 +2,7 @@
 
 ## ✅ What's Been Done
 
-Your TryMentor website is now fully optimized for mobile devices with comprehensive responsive design improvements.
+Your DevMentor website is now fully optimized for mobile devices with comprehensive responsive design improvements.
 
 ### 1. **CSS Mobile Optimizations** (`css/styles.css`)
 
